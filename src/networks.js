@@ -33,3 +33,14 @@ exports.testnet = {
   scriptHash: 0xc4,
   wif: 0xef,
 };
+exports.digibyte = {
+  messagePrefix: '\x19DigiByte Signed Message:\n',
+  bip32: {
+    public: 0x0488b21e,
+    private: 0x0488ade4
+  },
+  pubKeyHash: 0x1e,
+  scriptHash: 0x3f,
+  wif: 0x80,
+  dustThreshold: 546 // https://github.com/bitcoin/bitcoin/blob/v0.9.2/src/core.h#L151-L162
+};
